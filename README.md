@@ -26,7 +26,7 @@ This script has been tested on Windows XP and Windows 7 (x64), but should work o
 
 ## CHANGELOG
 
-	See [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](CHANGELOG.md).
 	
 ## Building Docs
 
