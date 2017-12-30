@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("che",["Function"],[["CheckError",,[["RegUpdateAllHkcuHkcr",,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr.CheckError","VisualBasicClass:RegUpdateAllHkcuHkcr:CheckError"]]]]);

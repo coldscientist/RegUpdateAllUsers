@@ -1,0 +1,3 @@
+[submodule "RegClassVBS"]
+	path = RegClassVBS
+	url = https://github.com/coldscientist/RegClassVBS

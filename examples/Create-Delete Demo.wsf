@@ -1,0 +1,47 @@
+<job id="RegUpdateAllHkcuHkcr">
+<script language="VBScript" src="..\RegClassVBS\RegClass.vbs"/>
+<script language="VBScript" src="..\RegUpdateAllHkcuHkcr.vbs"/>
+
+<script language="VBScript">
+	Option Explicit
+	
+	Dim strTestKey : strTestKey = "HKCU\Software\_Test\"
+	
+	MsgBox "This demo creates keys and values into " & strTestKey & " for all users, then deletes them..", 64, "Reg Class"
+	
+	Dim RegUpdateAllHkcuHkcr
+	Set RegUpdateAllHkcuHkcr = New RegUpdateAllUsers
+	RegUpdateAllHkcuHkcr.Debug = False
+	
+	' They are not the same! Array is written in byte values.
+	RegUpdateAllHkcuHkcr.SetValue strTestKey & "My Test Binary Value", "hex:23,00,41,00,43,00,42,00,6c,00", "REG_BINARY"
+	RegUpdateAllHkcuHkcr.SetValue strTestKey & "My Test Binary Value 2", Array(23,00,41,00,43,00,42,00,255,00), "REG_BINARY"
+	
+	RegUpdateAllHkcuHkcr.SetValue strTestKey & "My Test String Value", "Some string value.", "REG_SZ"
+	
+	RegUpdateAllHkcuHkcr.SetValue strTestKey & "My Test Expand String Value", "%APPDATA%", "REG_EXPAND_SZ"
+	
+	RegUpdateAllHkcuHkcr.SetValue strTestKey & "My Test DWord Value", 60, "REG_DWORD"
+	
+	Dim A1 : A1 = Array("first multi string", "second multi string", "third multi string")
+    RegUpdateAllHkcuHkcr.SetValue strTestKey & "My Test Multi String Value", A1, "REG_MULTI_SZ"
+	
+	RegUpdateAllHkcuHkcr.SetValue strTestKey & "My Test QWord Value", 60, "REG_QWORD"
+	
+	RegUpdateAllHkcuHkcr.LoadRegistry()
+	
+	MsgBox "After you run this script and confirm it worked, click OK to test the deletion lines.", 64, "Reg Class"
+     
+	MsgBox "Delete " & Chr(34) & strTestKey & "My Test Binary Value" & Chr(34) & " value. Click OK to continue.", 64, "Reg Class"
+		RegUpdateAllHkcuHkcr.Delete strTestKey & "My Test Binary Value"
+		
+	RegUpdateAllHkcuHkcr.LoadRegistry()
+
+	MsgBox "Delete " & strTestKey & ". Click OK to continue.", 64, "Reg Class"
+		RegUpdateAllHkcuHkcr.Delete strTestKey
+	
+	RegUpdateAllHkcuHkcr.LoadRegistry()
+	
+	Set RegUpdateAllHkcuHkcr = Nothing
+</script>
+</job>

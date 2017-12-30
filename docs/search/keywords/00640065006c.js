@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("del",["Function"],[["Delete",,[["RegUpdateAllHkcuHkcr",,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr.Delete","VisualBasicClass:RegUpdateAllHkcuHkcr:Delete"]]],["Delete_",,[["RegUpdateAllHkcuHkcr",,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr.Delete_","VisualBasicClass:RegUpdateAllHkcuHkcr:Delete_"]]]]);

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("set",["Function"],[["SetValue",,[["RegUpdateAllHkcuHkcr",,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr.SetValue","VisualBasicClass:RegUpdateAllHkcuHkcr:SetValue"]]],["SetValue_",,[["RegUpdateAllHkcuHkcr",,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr.SetValue_","VisualBasicClass:RegUpdateAllHkcuHkcr:SetValue_"]]]]);

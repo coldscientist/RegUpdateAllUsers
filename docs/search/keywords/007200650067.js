@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("reg",["Class"],[["RegUpdateAllHkcuHkcr",,[[,,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr","VisualBasicClass:RegUpdateAllHkcuHkcr"]]]]);

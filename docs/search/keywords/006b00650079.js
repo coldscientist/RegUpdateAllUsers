@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("key",["Function"],[["KeysToModify",,[["RegUpdateAllHkcuHkcr",,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr.KeysToModify","VisualBasicClass:RegUpdateAllHkcuHkcr:KeysToModify"]]]]);

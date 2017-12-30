@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("val",["Function"],[["Validate",,[["RegUpdateAllHkcuHkcr",,,,0,"File:RegUpdateAllHkcuHkcr.vbs:RegUpdateAllHkcuHkcr.Validate","VisualBasicClass:RegUpdateAllHkcuHkcr:Validate"]]]]);
